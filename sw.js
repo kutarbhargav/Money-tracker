@@ -1,4 +1,4 @@
-const CACHE = 'money-tracker-v1';
+const CACHE = 'money-tracker-v2';
 const ASSETS = ['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS))));
 self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));
