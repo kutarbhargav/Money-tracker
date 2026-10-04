@@ -1,8 +1,31 @@
-# Money Tracker Android
+# Money Tracker MVP
 
-Native Android wrapper around the Money Tracker local web UI.
+Private, mobile-first personal money tracker based on the Figma design.
 
-- Loads the UI from Android app assets using `file:///android_asset/index.html`.
-- Uses Android AlarmManager for the daily reminder; no continuous background service.
-- Transactions remain local on the device.
-- Android build is produced with Gradle/GitHub Actions.
+## Included
+- Dashboard with monthly credit, spending, remaining balance and category breakdown
+- Add Expense
+- Add Credit
+- Transaction history with search and filters
+- Delete transaction
+- Custom categories
+- Settings
+- Local-only persistence using browser localStorage
+- Installable PWA shell + offline cache
+- No login, backend, analytics, or cloud sync
+- Notifications intentionally deferred
+
+## Run locally
+Requires Node.js.
+
+```bash
+npx serve .
+```
+
+Open the printed URL in a browser. For phone installation, use an HTTPS deployment and choose **Add to Home screen / Install app** in the browser.
+
+## Data privacy
+Transactions are stored in the browser's local storage on the device. Clearing browser/site data will remove them. There is no server-side copy.
+
+## Note about reminders
+The UI includes reminder settings, but actual scheduled notifications are intentionally not implemented yet.
