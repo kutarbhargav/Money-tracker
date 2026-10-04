@@ -1,0 +1,13 @@
+{
+  "name": "Money Tracker",
+  "short_name": "Money Tracker",
+  "description": "Private personal money tracker",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f6f8fa",
+  "theme_color": "#f6f8fa",
+  "orientation": "portrait-primary",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
